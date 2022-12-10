@@ -1,0 +1,1 @@
+[![Build code, run unit test, run SAST, SCA, DAST security scans](https://github.com/devops4mecode/github-action-devops/actions/workflows/complete-workflow.yml/badge.svg)](https://github.com/devops4mecode/github-action-devops/actions/workflows/complete-workflow.yml)
