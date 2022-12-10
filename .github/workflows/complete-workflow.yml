@@ -4,7 +4,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Run unit tests and SAST scan on the source code 
+    name: Build, Run Unit-tests and SAST Sonarqube scan on the source code 
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 11
@@ -30,7 +30,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   zap_scan:
     runs-on: ubuntu-latest
-    name: Run DAST scan on the web application
+    name: Run DAST ZAP scan on the web application
     steps:
       - name: Checkout
         uses: actions/checkout@v2
